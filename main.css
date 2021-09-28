@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+div#nav {
+    position: fixed;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    z-index: 1;
+}
+div#front {
+    position: relative;
+    /* display: block; gjør at overflow-x hidden fungerer */
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: lavender;
+    overflow-x: hidden;
+}
+.second {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    background-color: mistyrose;
+}
+.third {
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    background-color:wheat ;
+}
+.fourth {
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    background-color: lightyellow;
+}
+.fifth {
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    background-color: papayawhip;
+}

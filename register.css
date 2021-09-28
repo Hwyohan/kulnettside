@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+div#front {
+    position: absolute;
+    /* display: block; gjør at overflow-x hidden fungerer */
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: lavender;
+    overflow-x: hidden;
+}
+.form {
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 15%;
+    height: 400px;
+    width: 550px;
+    background-color: rgb(232, 255, 179);
+}
+div#formtitle {
+    position: absolute;
+    left: 15%;
+    top: 10px;
+}
+h1#formtitletext {
+    font-size: 20px;
+    font-family: 'Glory', sans-serif;
+}
+form#forminsert {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.bar {
+    margin: 0px;
+    font-family: 'Architects Daughter', cursive;
+}
+div#formimage {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0px 25px 25px 0px;
+    height: 400px;
+    width: 225px;
+    left: 326px;
+    background-color: rosybrown;
+}
+img#hazelnut {
+    width: 100%; 
+    transition: .2s all ease-out;
+    /* Du mente kanskje % og ikke px */
+}
+img#hazelnut:hover {
+    filter: grayscale(1);
+}
