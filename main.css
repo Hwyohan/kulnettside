@@ -6,9 +6,112 @@ body {
 div#nav {
     position: fixed;
     height: 100px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    z-index: 1;
+    display: block;
+    opacity: 0%;
+    z-index: 2;
+}
+div#nav:hover {
+    transition: 500ms;
+    opacity: 100%;
+}
+div#nav:not(:hover) {
+    transition: 1000ms;
+}
+div#TitleBox {
+    position: absolute;
+    top: 20px;
+    width: 70px;
+    height: 50px;
+    left: 9.2%;
+    transform: translate(-50%, 0);
+    background-color: #E0BBE4;
+}
+div#TitleBox2 {
+    position: absolute;
+    top: -5px;
+    left: 13.2%;
+    transform: translate(-50%, 0);
+}
+div#nav:hover > div#TitleBox {
+    transition: 500ms;
+    left: 13.2%;
+    transform: translate(-50%, 0);
+    width: 165px;
+    height: 50px;
+    background: rgb(209,178,241);
+    background: linear-gradient(90deg, rgba(209,178,241,0.7011846975118172) 50%, rgba(224,187,228,1) 50%);
+}
+div#nav:not(:hover) > div#TitleBox {
+    transition: 500ms;
+}
+h1#Title {
+    user-select: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+a#TitleLink {
+    user-select: none;
+    text-decoration: none;
+    color: black;
+}
+h1#menu {
+    position: absolute;
+    user-select: none;
+    cursor: default;
+    top: -20px;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 2;
+}
+.MenuContent {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background-color: white;
+    width: 120px;
+    z-index: 0;
+}
+.MenuBtn {
+    color: black;
+    padding-left: 40px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1#MenuBtn1:hover {
+    transition: 500ms;
+    background-color: #AEBAE6;
+}
+h1#MenuBtn2:hover {
+    transition: 500ms;
+    background-color: #CAC9EE;
+}
+h1#MenuBtn3:hover {
+    transition: 500ms;
+    background-color: #E2D1ED;
+}
+.a {
+    text-decoration: none;
+    color: inherit;
+}
+.MenuBox {
+    position: absolute;
+    transition: 500ms;
+    background-color: rgb(215, 215, 250);
+    top: 40px;
+    left: 80%;
+    width: 120px;
+    height: 15px;
+}
+.MenuBox:hover > .MenuContent {
+    transition: 1000ms;
+    display: block;
+}
+.MenuBox:hover {
+    height: 25px;
+    background-color: #FEC8D8;
 }
 div#front {
     position: relative;
@@ -16,20 +119,78 @@ div#front {
     display: block;
     height: 100vh;
     width: 100vw;
-    background-color: lavender;
+    background-color: #f7f7ff;
     overflow-x: hidden;
+}
+img#FrontImage {
+    position: absolute;
+    left: 300px;
+    height: 581px;
+    width: 1000px;
+}
+div#LeftPlatform {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    height: 100vh;
+    width: 325px;
+}
+.FrontTitle {
+    position: absolute;
+    background-color: rgba(255, 210, 251, 0);
+    height: 200px;
+    width: 500px;
+    top: 160px;
+    left: 150px;
+}
+.CrossQuote {
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    pointer-events: none;
+}
+h1#CrossQuoteId2 {
+    bottom: 40px;
+    left: 70px;
+}
+div#CrossQuoteColor {
+    position: absolute;
+    top: 40.5px;
+    height: 30px;
+    width: 75px;
+    background-color: #e2d1ed;
+}
+div#CrossQuoteColor2 {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    height: 15px;
+    width: 100px;
+    background-color: #CAC9EE;
+}
+div#HiddenBox1 {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 325px;
+}
+div#HiddenBox1:hover > div#CrossQuoteColor {
+    opacity: 0;
+}
+div#HiddenBox1:hover > div#CrossQuoteColor2 {
+    opacity: 0;
 }
 .second {
     position: relative;
     height: 300px;
     width: 100vw;
-    background-color: mistyrose;
+    background-color: #f7f7ff;
 }
 .third {
     position: relative;
     height: 400px;
     width: 100vw;
-    background-color:wheat ;
+    background-color:wheat;
 }
 .fourth {
     position: relative;
