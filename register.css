@@ -10,7 +10,7 @@ div#nav {
     background-color: rgb(255, 255, 255);
     width: 100%;
     display: block;
-    opacity: 0%;
+    opacity: 5%;
     z-index: 2;
 }
 div#nav:hover {
@@ -123,12 +123,19 @@ div#front {
     background-color: lavender;
     overflow-x: hidden;
 }
+img#SkyBg {
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
 .form {
     position: absolute;
     border-radius: 20px;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 15%;
+    top: 20%;
     height: 400px;
     width: 550px;
     background-color: #ffffff;
@@ -139,33 +146,70 @@ div#formtitle {
     top: 10px;
 }
 h1#formtitletext {
+    cursor: default;
+    pointer-events: none;
     font-size: 20px;
     font-family: 'Glory', sans-serif;
 }
 form#forminsert {
     position: absolute;
     left: 10%;
-    top: 25%;
+    top: 20%;
     font-family: 'Josefin Sans', sans-serif;
 }
 .bar {
+    cursor: default;
+    pointer-events: none;
     margin: 0px;
     font-family: 'Architects Daughter', cursive;
+}
+.InputBox {
+    font-family: 'Zilla Slab', serif;
+    height: 30px;
+    padding: 0px 15px;
+    width: 150px;
+    margin: 2px 2px;
+    border: solid 1px #cac9ee;
+}
+.InputBox:hover {
+    transition: 500ms;
+    background-color: #cac9ee54;
+}
+.InputBox:not(:hover) {
+    transition: 500ms;
+}
+.SubmitBtn {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+    border: solid 0px black;
+    background-color: #cac9ee56;
+}
+.SubmitBtn:hover {
+    transition: 500ms;
+    background-color: #cac9ee;
+}
+.SubmitBtn:not(:hover) {
+    transition: 500ms;
 }
 div#formimage {
     position: absolute;
     overflow: hidden;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 20px 20px 0px;
     height: 400px;
     width: 225px;
-    left: 326px;
+    left: 325px;
     background-color: rosybrown;
 }
-img#hazelnut {
+img#MountainBg {
+    object-fit: cover;
     width: 100%; 
+    height: 100%;
     transition: .2s all ease-out;
     /* Du mente kanskje % og ikke px */
 }
-img#hazelnut:hover {
+img#MountainBg:hover {
     filter: grayscale(1);
 }
